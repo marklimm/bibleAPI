@@ -39,15 +39,27 @@
             <form ng-submit="submit()">
 
                 <h3>Bible verse copy and paster</h3>
-                <div class="form-group">
-                    <label>Reference</label>
-                    <input type="text" class="form-control" id="searchReference" ng-model="searchReference" placeholder="Reference">
-                </div>
-
-                <input type="submit" class="btn btn-primary" value="Search" />
-
+				
+				<label>Reference</label>
+				<div class="row">
+					<div class="col-sm-9">
+					
+						<div class="form-group">
+							
+							<input type="text" class="form-control" id="searchReference" ng-model="searchReference" placeholder="Reference">
+						
+						</div>
+						
+					</div>
+					<div class="col-sm-3">
+					
+						<input type="submit" class="btn btn-primary " value="Search" />
+					
+					</div>
+				</div>
+				
             </form>
-
+			
 
             <div id="formattedPassage">
                 <span ng-bind-html="referenceAndVerse"></span>
